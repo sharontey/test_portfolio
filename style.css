@@ -53,9 +53,6 @@ nav a:hover {
 
 input, textarea, button {
   font: inherit;
-  border: 1px solid oklch(80% 3% 200);
-  border-radius: 0.25em;
-  padding: 0.25em;
 }
 
 form {
