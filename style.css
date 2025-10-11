@@ -3,4 +3,5 @@ body {
 	   and use the OS’s UI font as the website font
 	 */
   max-width: 50ch;
+  margin-inline: auto;
 }
