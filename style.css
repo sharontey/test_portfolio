@@ -88,5 +88,6 @@ article {
 
 article h2 {
   margin: 0;
+  align-self: end;
 }
 
