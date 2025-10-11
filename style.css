@@ -90,13 +90,12 @@ button[type="submit"] {
 
 article {
   display: grid;
-  grid-template-columns: subgrid;
+  grid-template-rows: subgrid;
   grid-row: span 3;
   gap: 1em;
 }
 
 article h2 {
   margin: 0;
-  min-height: 2lh;
 }
 
