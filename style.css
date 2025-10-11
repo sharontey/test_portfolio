@@ -77,5 +77,16 @@ button[type="submit"] {
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+}
+
+article {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-row: span 3;
   gap: 1em;
 }
+
+article h2 {
+  margin: 0;
+}
+
