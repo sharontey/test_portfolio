@@ -1,3 +1,12 @@
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: 400%;
+}
+
 body {
   max-width: 100ch;
   margin-inline: max(1em, (100% - 100ch) / 2);
@@ -88,6 +97,6 @@ article {
 
 article h2 {
   margin: 0;
-  align-self: end;
+  min-height: 2lh;
 }
 
