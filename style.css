@@ -50,3 +50,20 @@ nav a:hover {
   padding-bottom: calc(0.5em - 0.4em);
   background-color: oklch(from var(--color-accent) 95% 5% h);
 }
+
+input, textarea, button {
+  font: inherit;
+  border: 1px solid oklch(80% 3% 200);
+  border-radius: 0.25em;
+  padding: 0.25em;
+}
+
+form {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+label {
+  margin-block: 0.5em;
+}
