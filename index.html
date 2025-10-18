@@ -5,20 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sharon Tey : Personal site and portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script type="module" src="glabal.js" defer></script>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html" class="current">Home</a></li>
-            <li><a href="projects/index.html">Projects</a></li>
-            <li><a href="contact/index.html">Contact</a></li>
-            <li><a href="resume/index.html">Resume</a></li>
-            <li><a href="https://github.com/sharontey" target="_blank">GitHub</a></li>
-    
-        </ul>
-    </nav>
-    <h1>Sharon Tey</h1>
-    <p>Hi I'm Sharon, welcome to my personal site and portfolio! I'm a Data Science student at the University of California, San Diego (UCSD), with a minor in Business Analytics. As an aspiring Data Scientist, I'm passionate about solving real-world problems using data. I enjoy working with Python, exploring data with pandas and seaborn, and applying machine learning to predict trends and patterns.</p>
-    <img src="images/IMG_0435.JPG" alt="A picture of myself" width="250">
+    <div class="profile-container">
+        <div class="profile-pic">
+            <img src="images/IMG_0435.JPG" alt="A picture of myself">
+        </div>
+        <div class="profile-description">
+            <h1>Hi, I'm Sharon Tey!</h1>
+            <h2>Data Scientist - I don't assume, I validate.</h2>
+            <p>Hi, I'm a data science student at UC San Diego who loves turning messy data into neat, well-behaved insights.</p>
+            <p>I clean data like it's spring cleaning, visualize trends like a weather forecaster, and build models that (hopefully) predict the future.</p>
+            <p>When I'm not wrangling datasets, you'll find me traveling and chasing sunsets with my camera because I always believe both sexy data and gorgeous views deserve a good storyline.</p>
+        </div>
+    </div>
 </body>
 </html>

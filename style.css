@@ -1,4 +1,4 @@
-h1, h2, h3, h4, h5, h6 {
+/* h1, h2, h3, h4, h5, h6 {
   line-height: 1.1;
   text-wrap: balance;
 }
@@ -12,6 +12,54 @@ body {
   margin-inline: max(1em, (100% - 100ch) / 2);
   line-height: 1.5;
   padding: 1em;
+} */
+
+body {
+  max-width: 100ch;
+  margin-inline: max(1em, (100% - 100ch) / 2);
+  line-height: 1.6;
+  padding: 2em 1em;
+
+}
+
+/* Profile section layout */
+.profile-container {
+  display: flex;
+  gap: 2em;
+  align-items: flex-start;
+  margin-bottom: 2em;
+}
+
+.profile-pic {
+  flex-shrink: 0;
+}
+
+.profile-pic img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.profile-description {
+  flex: 1;
+}
+
+/* Typography improvements */
+h1 {
+  font-family: 'Georgia', serif;
+  margin-bottom: 0.3em;
+}
+
+h2 {
+  font-family: 'Georgia', serif;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+p {
+  margin-bottom: 1em;
 }
 
 /* Step 2.4: Define accent color */
@@ -243,4 +291,52 @@ body .container {
   .container section {
     page-break-inside: avoid;
   }
+}
+
+/*
+Add this to your root/html element:
+*/
+:root {
+  color-scheme: light dark;
+}
+
+/*
+Update your nav border color to be adaptive:
+*/
+nav {
+  --border-color: oklch(50% 10% 200 / 40%);
+  /* ... your other nav styles ... */
+}
+
+/* Use the border color variable */
+nav {
+  border-bottom-color: var(--border-color);
+}
+
+/* If you have menu items with borders: */
+nav li {
+  border-bottom-color: var(--border-color);
+}
+
+/*
+Optional: Fix hover background (if you implemented it in Lab 2)
+Replace the fixed lightness version with this adaptive one:
+*/
+nav a:hover {
+  background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
+}
+
+/*
+Style the color scheme switcher:
+*/
+.color-scheme {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 80%;
+}
+
+/* Make select inherit font-family (add to existing rule if you have one) */
+input, textarea, button, select {
+  font-family: inherit;
 }
