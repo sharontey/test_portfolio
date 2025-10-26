@@ -131,7 +131,7 @@ button[type="submit"] {
   grid-column: 1 / -1;
 }
 
-.projects-page {
+.projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
   gap: 1em;
@@ -339,4 +339,31 @@ Style the color scheme switcher:
 /* Make select inherit font-family (add to existing rule if you have one) */
 input, textarea, button, select {
   font-family: inherit;
+}
+
+#profile-stats dl {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 10px;
+  background-color: #f0f0f0; /* optional styling */
+  border-radius: 8px;        /* optional styling */
+}
+
+#profile-stats dt {
+  grid-row: 1; /* place all <dt> in the first row */
+  font-weight: bold;
+  text-align: center;
+}
+
+#profile-stats dd {
+  grid-row: 2; /* place all <dd> in the second row */
+  text-align: center;
+  margin: 0;
+}
+
+.projects img {
+  max-width: 100%;   /* image won’t overflow container */
+  height: auto;      /* maintain aspect ratio */
+  display: block;    /* remove inline gaps */
 }
