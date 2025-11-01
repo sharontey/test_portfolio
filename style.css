@@ -348,6 +348,7 @@ input, textarea, button, select {
   padding: 10px;
   background-color: #f0f0f0; /* optional styling */
   border-radius: 8px;        /* optional styling */
+  color:#222;
 }
 
 #profile-stats dt {
@@ -366,4 +367,121 @@ input, textarea, button, select {
   max-width: 100%;   /* image won’t overflow container */
   height: auto;      /* maintain aspect ratio */
   display: block;    /* remove inline gaps */
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  font-family: Baskerville, "Times New Roman", serif;
+  font-variant-numeric: oldstyle-nums;
+}
+
+.project-year {
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic;
+}
+
+#projects-pie-plot {
+  max-width: 20em;
+  margin-block: 2em;
+
+  overflow: visible;
+}
+
+.legend {
+  flex: 1;                   /* legend grows to fill remaining space */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(8em, 1fr));
+  gap: 0.5em;
+  border: 1px solid #ccc;
+  padding: 1em;
+  background: #fafafa;
+  color:#222
+}
+
+.container {
+  display: flex;
+  align-items: center;       /* vertically center the SVG and legend */
+  justify-content: center;   /* optional: center both horizontally */
+  gap: 2em;                  /* spacing between pie and legend */
+  margin: 2em auto;
+  max-width: 700px;          /* optional: prevents it from stretching too wide */
+}
+
+svg {
+  flex: 0 0 auto;            
+  width: 200px;             
+  height: 200px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.legend-item .swatch {
+  display: inline-block;
+  width: 1em;
+  aspect-ratio: 1 / 1;
+  background-color: var(--color);
+  border-radius: 0.25em;
+  border: 1px solid #ccc;
+}
+
+
+.searchBar {
+  width: 100%;
+  max-width: 700px;
+  margin: 2em auto;
+  padding: 0.75em 1em;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 0.5em;
+  background: white;
+  color: #222; /* Dark text for light background */
+  display: block;
+}
+
+.searchBar:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+/* Dark mode styles for search bar */
+@media (prefers-color-scheme: dark) {
+  .searchBar {
+    background: #333;
+    border-color: #555;
+    color: #eee;
+  }
+  .searchBar:focus {
+    border-color: #66b2ff;
+    box-shadow: 0 0 0 3px rgba(102, 178, 255, 0.2);
+  }
+  
+}
+
+path {
+  transition: 300ms;
+}
+
+#projects-pie-plot:has(path:hover) {
+  path:not(:hover) {
+    opacity: 0.5;
+  }
+}
+
+
+.selected {
+  --color: oklch(60% 45% 0) !important; /* override inline fill */
+
+  fill: var(--color);
+}
+
+path {
+  cursor: pointer;
 }
