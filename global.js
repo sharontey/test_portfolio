@@ -163,6 +163,7 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
   // Loop through each project and create an article element
   projects.forEach(project => {
     const article = document.createElement('article');
+    article.classList.add('project-card');
 
     // Handle missing properties gracefully
     const title = project.title || 'Untitled Project';
@@ -172,9 +173,9 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
 
     // Set the innerHTML with dynamic heading level
     article.innerHTML = `
-      <${headingLevel}>${title}</${headingLevel}>
       <img src="${image}" alt="${title}">
       <div class="project-info">
+        <h3>${title}</h3>
         <p>${description}</p>
         <p class="project-year">${year}</p>
       </div>

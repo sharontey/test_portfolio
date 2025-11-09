@@ -14,9 +14,13 @@ body {
   padding: 1em;
 } */
 
+h3 {
+  font-size: 125%;
+}
+
 body {
-  max-width: 100ch;
-  margin-inline: max(1em, (100% - 100ch) / 2);
+  max-width: 120ch;
+  margin-inline: max(1em, (100% - 120ch) / 2);
   line-height: 1.6;
   padding: 2em 1em;
 
@@ -27,7 +31,7 @@ body {
   display: flex;
   gap: 2em;
   align-items: flex-start;
-  margin-bottom: 2em;
+  margin-bottom: 5em;
 }
 
 .profile-pic {
@@ -35,6 +39,8 @@ body {
 }
 
 .profile-pic img {
+  margin-top: 3em;
+  margin-right: 2em;
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -44,6 +50,10 @@ body {
 
 .profile-description {
   flex: 1;
+}
+
+.profile-description h2 {
+  color: grey;
 }
 
 /* Typography improvements */
@@ -135,6 +145,7 @@ button[type="submit"] {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
   gap: 1em;
+  margin-bottom: 5rem;
 }
 
 article {
@@ -363,25 +374,54 @@ input, textarea, button, select {
   margin: 0;
 }
 
-.projects img {
-  max-width: 100%;   /* image won’t overflow container */
-  height: auto;      /* maintain aspect ratio */
-  display: block;    /* remove inline gaps */
-}
-
-.project-info {
+.project-card {
+  background: canvas; /* respects light/dark mode */
+  border-radius: 0.75em;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  gap: 0.5em;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer; /* makes it feel interactive */
+}
+
+.project-card h3 {
+  min-height: 5em;
+  text-align: left;
   font-family: Baskerville, "Times New Roman", serif;
-  font-variant-numeric: oldstyle-nums;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+}
+
+
+.project-card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+}
+
+.project-card .project-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  gap: 0.4em;
+  font-family: Baskerville, "Times New Roman", serif;
 }
 
 .project-year {
   font-size: 0.9rem;
   color: #666;
   font-style: italic;
-}
+} 
+
 
 #projects-pie-plot {
   max-width: 20em;
