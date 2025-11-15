@@ -24,7 +24,7 @@
     },
     {
         "title": "Bikewatching",
-        "image": "/images/bikewatching.png",
+        "image": "../images/bikewatching.png",
         "description": "Doloremque sit ratione necessitatibus sed, unde nemo ea possimus repudiandae sunt eius consectetur ipsum nam nobis nesciunt quidem reprehenderit deleniti hic temporibus laboriosam laudantium laborum rem labore. Deserunt, asperiores omnis?",
         "year": "2025",
         "showcase_link": "https://sharontey.github.io/Bikewatching/",
@@ -32,7 +32,7 @@
     },
     {
         "title": "How Climate Choices Shape Future Rainfall Across U.S. Regions?",
-        "image": "/images/climate.png",
+        "image": "../images/climate.png",
         "description": "Visualized 165 years of U.S. rainfall data alongside future climate projections to show how precipitation patterns are changing over time. The historical record (1850–2014) reveals a steady upward trend with natural variability, which I use as the baseline before transitioning into model-based projections (2015–2100).",
         "year": "2025",
         "showcase_link": "https://jeremyjcheng.github.io/106_project3/",
