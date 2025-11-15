@@ -33,7 +33,7 @@
     {
         "title": "How Climate Choices Shape Future Rainfall Across U.S. Regions?",
         "image": "/images/climate.png",
-        "description": "Eius magni culpa ad distinctio in eligendi quia, non perferendis. Ex recusandae deleniti obcaecati voluptate tenetur nulla vero. Aliquam dolore asperiores soluta modi ad assumenda laudantium ea laboriosam? Illo, praesentium.",
+        "description": "Visualized 165 years of U.S. rainfall data alongside future climate projections to show how precipitation patterns are changing over time. The historical record (1850–2014) reveals a steady upward trend with natural variability, which I use as the baseline before transitioning into model-based projections (2015–2100).",
         "year": "2025",
         "showcase_link": "https://jeremyjcheng.github.io/106_project3/",
         "github_link": "https://github.com/jeremyjcheng/106_project3"
