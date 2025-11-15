@@ -416,6 +416,23 @@ input, textarea, button, select {
   font-family: Baskerville, "Times New Roman", serif;
 }
 
+.project-links a {
+  display: inline-block;
+  margin-right: 0.5em;
+  padding: 0.4em 0.8em;
+  background-color: white;
+  color: black;
+  outline: black solid 1px;
+  text-decoration: none;
+  border-radius: 0.4em;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.project-links a:hover {
+  background-color: rgb(209, 213, 218);
+}
+
 .project-year {
   font-size: 0.9rem;
   color: #666;
@@ -449,6 +466,8 @@ input, textarea, button, select {
   margin: 2em auto;
   max-width: 700px;          /* optional: prevents it from stretching too wide */
 }
+
+
 
 svg {
   flex: 0 0 auto;            

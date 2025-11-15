@@ -3,7 +3,9 @@
         "title": "Predicting Power Outages",
         "image": "https://taraenergy.com/wp-content/uploads/2021/12/power-grids-and-electrical-grids-photo-of-towers.jpg",
         "description": "Built a machine learning pipeline to predict power outage duration, improving baseline MAE by 22% with Random Forest algorithm.",
-        "year": "2025"
+        "year": "2025",
+        "showcase_link": "https://claudinehandali.github.io/power-outages-project/",
+        "github_link": "https://github.com/claudinehandali/power-outages-project"
     },
     {
         "title": "Predicting the Environmental Trade-offs of AI Development",
@@ -15,17 +17,21 @@
         "title": "Persuasive Visualizations for NYPD Accountability",
         "image": "https://static01.nyt.com/images/2015/01/11/nyregion/12rift-deblasio-timeline-1421012675638/12rift-deblasio-timeline-1421012675638-videoLarge.jpg",
         "description": "Created two supporting visualizations and two opposing visualizations to highlight NYPD accountability issues using Matplotlib and Seaborn.",
-        "year": "2025"
+        "year": "2025",
+        "showcase_link": "https://jeremyjcheng.github.io/106_project2/",
+        "github_link": "https://github.com/jeremyjcheng/106_project2"
     },
     {
-        "title": "Ullam nemo alias quam.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "title": "Bikewatching",
+        "image": "/images/bikewatching.png",
         "description": "Doloremque sit ratione necessitatibus sed, unde nemo ea possimus repudiandae sunt eius consectetur ipsum nam nobis nesciunt quidem reprehenderit deleniti hic temporibus laboriosam laudantium laborum rem labore. Deserunt, asperiores omnis?",
-        "year": "2024"
+        "year": "2024",
+        "showcase_link": "https://sharontey.github.io/Bikewatching/",
+        "github_link": "https://github.com/sharontey/Bikewatching"
     },
     {
-        "title": "Laborum ut facilis amet.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "title": "How Climate Choices Shape Future Rainfall Across U.S. Regions?",
+        "image": "/images/climate.png",
         "description": "Eius magni culpa ad distinctio in eligendi quia, non perferendis. Ex recusandae deleniti obcaecati voluptate tenetur nulla vero. Aliquam dolore asperiores soluta modi ad assumenda laudantium ea laboriosam? Illo, praesentium.",
         "year": "2025"
     },
