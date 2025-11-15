@@ -11,7 +11,8 @@
         "title": "Predicting the Environmental Trade-offs of AI Development",
         "image": "https://content.maltatoday.com.mt/ui/images/photos/6_ai_1690736368691.png",
         "description": "Developed regression models to estimate carbon emissions from AI training, achieving 15% lower error than existing benchmarks.",
-        "year": "2024"
+        "year": "2024",
+        "github_link": "https://github.com/sharontey/Group150_WI25/tree/master"
     },
     {
         "title": "Persuasive Visualizations for NYPD Accountability",
@@ -25,7 +26,7 @@
         "title": "Bikewatching",
         "image": "/images/bikewatching.png",
         "description": "Doloremque sit ratione necessitatibus sed, unde nemo ea possimus repudiandae sunt eius consectetur ipsum nam nobis nesciunt quidem reprehenderit deleniti hic temporibus laboriosam laudantium laborum rem labore. Deserunt, asperiores omnis?",
-        "year": "2024",
+        "year": "2025",
         "showcase_link": "https://sharontey.github.io/Bikewatching/",
         "github_link": "https://github.com/sharontey/Bikewatching"
     },
@@ -33,7 +34,9 @@
         "title": "How Climate Choices Shape Future Rainfall Across U.S. Regions?",
         "image": "/images/climate.png",
         "description": "Eius magni culpa ad distinctio in eligendi quia, non perferendis. Ex recusandae deleniti obcaecati voluptate tenetur nulla vero. Aliquam dolore asperiores soluta modi ad assumenda laudantium ea laboriosam? Illo, praesentium.",
-        "year": "2025"
+        "year": "2025",
+        "showcase_link": "https://jeremyjcheng.github.io/106_project3/",
+        "github_link": "https://github.com/jeremyjcheng/106_project3"
     },
     {
         "title": "Magni architecto maxime consequuntur!",
