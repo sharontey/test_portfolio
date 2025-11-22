@@ -19,8 +19,8 @@ h3 {
 }
 
 body {
-  max-width: 120ch;
-  margin-inline: max(1em, (100% - 120ch) / 2);
+  max-width: 160ch;
+  margin-inline: max(1em, (100% - 160ch) / 2);
   line-height: 1.6;
   padding: 2em 1em;
 
@@ -568,8 +568,10 @@ path {
 }
 
 #meta-chart {
-    width: 100%;
-    min-height: 600px;
+  border: 2px dashed #ccc;
+  padding: 1rem;
+  border-radius: 8px;
+  background: white;
 }
 
 #meta-chart svg {
@@ -648,6 +650,13 @@ circle:hover {
   animation: marching-ants 2s linear infinite;
 }
 
+/* Selection info styling */
+#selection-count {
+  margin: 1rem 0 0.5rem 0;
+  font-weight: 500;
+  text-align: center;
+}
+
 /* Selected circles styling */
 circle.selected {
   fill: #ff6b6b;
@@ -667,11 +676,13 @@ circle.selected {
   margin-left: 20px;
 }
 
+/* Language breakdown grid */
 #language-breakdown {
-  display: flex;
-  gap: 40px;
-  justify-content: center;
-  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+  padding: 1rem;
 }
 
 .language-stat {
@@ -694,4 +705,100 @@ circle.selected {
 .language-stat .percentage {
   font-size: 20px;
   font-weight: normal;
+}
+
+/* File visualization styles */
+#files {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 1em 2em;
+  margin-top: 2em;
+}
+
+#files > div {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: subgrid;
+  align-items: start;
+}
+
+#files dt {
+  grid-column: 1;
+  font-weight: bold;
+}
+
+#files dt small {
+  display: block;
+  font-size: 0.8em;
+  opacity: 0.7;
+  font-weight: normal;
+  margin-top: 0.25em;
+}
+
+#files dd {
+  grid-column: 2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  align-content: start;
+  gap: 0.15em;
+  padding-top: 0.6em;
+  margin-left: 0;
+}
+
+/* Unit visualization dots */
+.loc {
+  display: flex;
+  width: 0.5em;
+  aspect-ratio: 1;
+  background: var(--color, steelblue);
+  border-radius: 50%;
+}
+
+/* Scrollytelling layout */
+#scrolly-1 {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+#scrolly-1 > * {
+  flex: 1;
+}
+
+#scatter-story {
+  position: relative;
+}
+
+#scatter-plot {
+  position: sticky;
+  top: 0;
+  left: 0;
+  bottom: auto;
+  height: 60vh;
+  overflow: visible;
+  padding: 1rem;
+}
+/* Story steps */
+.step {
+  padding: 2rem 1rem;
+  margin-bottom: 50vh; /* Add spacing between steps */
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  line-height: 1.6;
+}
+
+.step:last-child {
+  margin-bottom: 0;
+}
+
+.step a {
+  color: steelblue;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.step a:hover {
+  text-decoration: underline;
 }
